@@ -66,4 +66,4 @@ Pin out for connector to ADC
 --------------------------------
 Initial idea for the connector pinout. Although I am wondering if maybe it makes more sense to generate the ADC reference voltage on the Antenna board so we can just use our existing 8 pin connector.
 
-.. image:: img/Connector_Pinout.png
+.. image:: img/Connector_Pinout.png 
