@@ -33,3 +33,10 @@ jobs:
       # Step 4: Build Sphinx documentation (HTML only)
       - name: Build HTML documentation
         run: sphinx-build -b html docs/ docs/_build/html  # Correct path for your Sphinx source and build directories
+
+         # Step 5: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.PAT_TOKEN }}  # Use the PAT token instead of GITHUB_TOKEN
+          publish_dir: source/_build/html
