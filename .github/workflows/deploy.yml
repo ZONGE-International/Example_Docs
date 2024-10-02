@@ -1,13 +1,12 @@
 name: Deploy Sphinx Documentation
 
 permissions:
-  contents: write
+  contents: write  # This gives the GITHUB_TOKEN write access to the repository
 
-# Trigger the workflow on push to the main branch
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -33,11 +32,11 @@ jobs:
 
       # Step 4: Build Sphinx documentation (HTML only)
       - name: Build HTML documentation
-        run: sphinx-build -b html docs/ source/_build/html
+        run: sphinx-build -b html source/ source/_build/html  # Correct path for your Sphinx source and build directories
 
       # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/_build/html
+          publish_dir: source/_build/html  # Correct directory where Sphinx builds the HTML output
