@@ -52,15 +52,16 @@ All parts would be surface mount mounted to on the inside of the box. The ground
 .. image:: img/Ground_plane_overlap.png
 
 
+2nd Idea for Mechanical Design 
+----------------------------------
+Put a `Triaxial Mountingt cube <https://www.thorlabs.com/thorproduct.cfm?partnumber=RM1F>`_  from Thor labs at the center to mount 6 3d printed collet style holders onto
 
-Some advantages
-#. Coil leads to the amplifier are very short and consisitent for all 3 coils. 
-#. It should make it relatively easy to make everything close to perfectly orthogonal
-#. Much easier to 3d print smaller pieces with precision. No glueing/epoxing necessary. 
 
-Some questions / possible issues.
-#. How waterproof does this thing need to be?
-#. How would this mount on to the ADC board?
+Intital concept model
+
+.. image:: img/3_axis_mount_2.png
+
+
 
 Pin out for connector to ADC
 --------------------------------
