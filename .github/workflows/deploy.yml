@@ -6,7 +6,7 @@ permissions:
 on:
   push:
     branches:
-      - master
+      - master  # Change this to 'master' to trigger on your master branch
 
 jobs:
   build:
@@ -32,11 +32,11 @@ jobs:
 
       # Step 4: Build Sphinx documentation (HTML only)
       - name: Build HTML documentation
-        run: sphinx-build -b html docs/ docs/_build/html  # Correct path for your Sphinx source and build directories
+        run: sphinx-build -b html source/ source/_build/html
 
-         # Step 5: Deploy to GitHub Pages
+      # Step 5: Deploy to GitHub Pages using GITHUB_TOKEN
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.PAT_TOKEN }}  # Use the PAT token instead of GITHUB_TOKEN
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Use the built-in GitHub Actions token
           publish_dir: source/_build/html
