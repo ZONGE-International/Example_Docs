@@ -7,7 +7,7 @@ Initial estimate
 
 .. image:: img/antennaNoiseEstimate.png
 
-After a discussion with Stefan I decided it made sense to increase the power consumption of the amplfier to reduce the noise level. The weight of an extra 18650 to supply the extra power reduces the noise level more than adding an equal amount of copper to all three coils.
+After a discussion with Stefan I decided it made sense to increase the power consumption of the amplfier to reduce the noise level. The weight of an extra 18650 to supply the extra power reduces the noise level more than adding an equal amount of copper to all three coils. Stefan !!
 
 Noise at different output senstivity values, V/nT
 
