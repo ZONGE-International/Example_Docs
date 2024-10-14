@@ -11,6 +11,7 @@ Drone SBIR Project Documentation
    :caption: Contents:
 
    project_goals.rst
+   system_design/toc.rst
    antenna/toc.rst
    data_logger/toc.rst
    mechanical_systems/toc.rst
