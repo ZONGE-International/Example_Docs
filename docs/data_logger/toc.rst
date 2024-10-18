@@ -6,3 +6,5 @@ Data_Logger
     :caption: Contents:
 
     requirements.rst
+    adc.rst
+    
